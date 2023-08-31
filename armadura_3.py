@@ -47,30 +47,40 @@ Vamos lá, você quer usar os valores prontos (1) ou quer rolar seus valores de 
 {cs('Constituição','green')}, {cs('Inteligência','blue')}, {cs('Sabedoria','purple')} e {cs('Carisma','orange')}.
 Nós seguiremos essa ordem! Sendo assim, escolha um valor para {cs('Força','red')}:''')
         forc = input()
+        while (int(forc) not in ATR):
+            forc = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(forc))
         ATR.remove(int(forc))
         print(f'''
 Ok, agora escolha um valor para {cs('Destreza','yellow')}''')
         print(ATR)
         des = input()
+        while des not in ATR:
+            des = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(des))
         ATR.remove(int(des))
         print(f'''
 Agora um para {cs('Constituição','green')}''')
         print(ATR)
         con = input()
+        while con not in ATR:
+            con = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(con))
         ATR.remove(int(con))
         print(f'''
 Escolha um para sua {cs('Inteligência','blue')}''')
         print(ATR)
         inte = input()
+        while inte not in ATR:
+            inte = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(inte))
         ATR.remove(int(inte))
         print(f'''
 Falta pouco! Qual valor para {cs('Sabedoria','purple')} você quer?''')
         print(ATR)
         sab = input()
+        while sab not in ATR:
+            sab = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(sab))
         ATR.remove(int(sab))
         print('O último valor que sobrou, {}, será seu valor de {}!'.format(ATR[0],cs('Carisma','orange')))
@@ -83,13 +93,18 @@ Falta pouco! Qual valor para {cs('Sabedoria','purple')} você quer?''')
         ATR = dadosDeAtributo()
         print(ATR)
         reroll = input('''Você gostou dos dados?
-(S/N)
+(S/N) 
+''').upper()
+        if reroll != 'N' or reroll != 'S':
+            print(ATR)
+        reroll = input('''Você gostou dos dados?
+(S/N) 
 ''').upper()
         while reroll == 'N':
             ATR = dadosDeAtributo()
             print(ATR)
             reroll = input('''Você gostou dos dados?
-(S/N)
+(S/N) 
 ''').upper()
             if reroll == 'S':
                 break

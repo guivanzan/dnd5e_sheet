@@ -8,13 +8,13 @@ page1 = reader.pages[0]
 page2 = reader.pages[1]
 page3 = reader.pages[2]
 
-fields = reader.getFields()
+fields = reader.get_fields()
 
 
 # 0 à 5 são modificadores dos testes de resistência (CHECKBOXES)
 # 25 à 30 savethrows (CHECKBOXES)
 def carimbo(j):
-    writer_annot = page1['/Annots'][j].getObject()
+    writer_annot = page1['/Annots'][j].get_object()
     for field in fields:
         if writer_annot.get('/T') == field:
             writer_annot.update({

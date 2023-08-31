@@ -12,7 +12,7 @@ def aventura():
 
           ''')
 
-    print('''Olá aventureiro, seja bem-vindo! É uma honra tê-lo conosco aqui na taverna.
+    print('''Olá aventureiro(a), seja bem-vindo! É uma honra tê-lo conosco aqui na taverna.
 Então quer dizer que você quer viver uma aventura é? ...Bom, veremos do que você é capaz hehehe''')
 
     print('''
