@@ -55,7 +55,7 @@ Nós seguiremos essa ordem! Sendo assim, escolha um valor para {cs('Força','red
 Ok, agora escolha um valor para {cs('Destreza','yellow')}''')
         print(ATR)
         des = input()
-        while des not in ATR:
+        while int(des) not in ATR:
             des = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(des))
         ATR.remove(int(des))
@@ -63,7 +63,7 @@ Ok, agora escolha um valor para {cs('Destreza','yellow')}''')
 Agora um para {cs('Constituição','green')}''')
         print(ATR)
         con = input()
-        while con not in ATR:
+        while int(con) not in ATR:
             con = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(con))
         ATR.remove(int(con))
@@ -71,7 +71,7 @@ Agora um para {cs('Constituição','green')}''')
 Escolha um para sua {cs('Inteligência','blue')}''')
         print(ATR)
         inte = input()
-        while inte not in ATR:
+        while int(inte) not in ATR:
             inte = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(inte))
         ATR.remove(int(inte))
@@ -79,7 +79,7 @@ Escolha um para sua {cs('Inteligência','blue')}''')
 Falta pouco! Qual valor para {cs('Sabedoria','purple')} você quer?''')
         print(ATR)
         sab = input()
-        while sab not in ATR:
+        while int(sab) not in ATR:
             sab = input("Esse valor não está na lista! Sem roubar!")
         ATRT.append(int(sab))
         ATR.remove(int(sab))
