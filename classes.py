@@ -9,6 +9,8 @@ def escolhaPericia(classe):
 
 {cs('Adestrar animais (1)','purple')}, {cs('Atletismo (2)','red')}, {cs('Intimidação (3)','orange')},
 {cs('Natureza (4)','blue')}, {cs('Percepção (5)','purple')} e {cs('Sobrevivência (6)','purple')}''')
+        # fazer um split por caractere e ignorar caracteres que n sao numeros
+        # utilizar try
         escolha1 = per[0]
         escolha2 = per[4]
         if escolha1 == escolha2:

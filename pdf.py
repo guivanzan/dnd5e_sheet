@@ -13,6 +13,7 @@ fields = reader.get_fields()
 
 # 0 à 5 são modificadores dos testes de resistência (CHECKBOXES)
 # 25 à 30 savethrows (CHECKBOXES)
+
 def carimbo(j):
     writer_annot = page1['/Annots'][j].get_object()
     for field in fields:
@@ -21,6 +22,7 @@ def carimbo(j):
                 NameObject("/V"): NameObject("/Yes"),
                     NameObject("/AS"): NameObject("/Yes")
                 })
+
 
 
 def escriba(nome,raça,ATRT,MODATRT,p1,p2,r1,r2):
