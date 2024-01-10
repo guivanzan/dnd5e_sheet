@@ -7,7 +7,6 @@ class playableCharacter:
         self.nivel = nivel
         self.vida = vida
         self.classe = ''
-
         self.atributos = {'for': 10, 'des': 10, 'con': 10,
                           'int': 10, 'sab': 10,'car': 10}
         
@@ -42,12 +41,6 @@ class playableCharacter:
         
         self.percepcaopassiva = 10 + self.modificadores['sab']
 
-    def mudaClasse(self, classe):
+    def escolhaClasse(self, classe):
         self.classe = classe
-
-teste = playableCharacter()
-
-classe = anao.anao()
-teste.mudaClasse(classe = classe)
-print(teste.classe.atributos)
 
