@@ -1,4 +1,4 @@
-from races import anao
+from races.anao import anao
 
 class playableCharacter:
     def __init__(self, nome = 'nome', nivel = '1', vida = 12):
